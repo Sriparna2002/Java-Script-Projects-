@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Image Visibility</title>
+    <style>
+        #image {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <img id="image" src="images.jpg" alt="Toggle Image">
+    <script>
+        const img =  document.getElementById('image') 
+        img.addEventListener('dblclick',(e)=>{
+            if (img.style.display === 'none'){
+                img.style.display = 'block'
+            }
+            else{
+                img.style.display = 'none'
+            }
+        })
+       
+    </script>
+</body>
+</html>
